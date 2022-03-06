@@ -1,0 +1,9 @@
+export function reducerUser(state, action){
+    switch(action.type){
+        case "login":
+            return {...state, user: {name: action.payload}}
+        default:
+            return state
+    }
+}
+
